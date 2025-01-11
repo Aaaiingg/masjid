@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <title>MyMosque</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</head>
+
+<body>
+
+  
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="/home" class="logo">
+					<img src="/assets/img/logo.png" width="35" height="35" alt=""> <span>MYMOSQUE</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">1</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notifications</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="/assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">1</span></a>
+                </li>
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img">
+							<img class="rounded-circle" src="/assets/img/user.jpg" width="24" alt="Admin">
+							<span class="status online"></span>
+						</span>
+						<span>Admin</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="/home/profile">My Profile</a>
+						<a class="dropdown-item" href="/home/edit-profile">Edit Profile</a>
+						
+						<a class="dropdown-item" href="/logout">Logout</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/home/profile">My Profile</a>
+                    <a class="dropdown-item" href="/home/edit-profile">Edit Profile</a>
+                    
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li class="active">
+                            <a href="/home"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                        </li>
+						<li>
+                            <a href="/anakyatim"><i class="fa fa-users"></i> <span>Anak Yatim</span></a>
+                        </li>
+                        <li>
+                            <a href="/asnaf"><i class="fa fa-user-plus"></i> <span>Asnaf</span></a>
+                        </li>
+                        <li>
+                            <a href="/khairat"><i class="fa fa-heart"></i> <span>Ahli Khairat</span></a>
+                        </li>
+                       
+                        <li>
+                            <a href="/home/mosque_economy"><i class="fa fa-money"></i> <span>Mosque Economy</span></a>
+                        </li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-user"></i> <span> Jawatankuasa </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="/jawatankuasa">jawatankuasa List</a></li>
+								<li><a href="/jawatankuasa/leave">Leaves</a></li>
+								
+							</ul>
+						</li>
+						
+						<li class="submenu">
+							<a href="#"><i class="fa fa-book"></i> <span> Annual Report </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="/receipt"> Generate report </a></li>
+								
+							</ul>
+						</li>
+                       
+						<li>
+							<a href="/complain/view_complain"><i class="fa fa-book"></i> <span>Complain</span></a>
+						</li>
+                        <li>
+							<a href="/booking/view_booking"><i class="fa fa-book"></i> <span>Booking</span></a>
+						</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+							<span class="dash-widget-bg1"><i class="fa fa-users" aria-hidden="true"></i></span>
+							<div class="dash-widget-info text-right">
+								<h3><%=doc%></h3>
+								<span class="widget-title1">Anak yatim <i class="fa fa-check" aria-hidden="true"></i></span>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg2"><i class="fa fa-heart"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=appointment%></h3>
+                                <span class="widget-title2">Ahli khairat <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg3"><i class="fa fa-user-plus" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=asnaf%></h3>
+                                <span class="widget-title3">Asnaf <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg4"><i class="fa fa-database" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=facility%></h3>
+                                <span class="widget-title4">Mosque Facility Rental <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg4"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=ajk%></h3>
+                                <span class="widget-title4">Jawatankuasa <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg1"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=leave%></h3>
+                                <span class="widget-title1">Ajk On Leave <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg2"><i class="fa fa-book" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3><%=complain%></h3>
+                                <span class="widget-title2">Complain <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-8 col-xl-8">
+						<div class="card">
+							<div class="card-header">
+								<h4 class="card-title d-inline-block">Active Ahli Khairat : <%= appointment%></h4> <a href="/appointment" class="btn btn-primary float-right">View all</a>
+							</div>
+							<div class="card-body p-0">
+								<div class="table-responsive">
+									<table class="table mb-0">
+										<thead class="d-none">
+											<tr>
+												<th>Name</th>
+												<th>phone</th>
+												<th>Address</th>
+												
+											</tr>
+										</thead>
+										<tbody>
+                                            <% for (var i = 0; i < applist.length; i++){ %>
+											<tr>
+												<td style="min-width: 200px;">
+													<h5 class="time-title p-0">Name</h5>
+													<p><%= applist[i].name%></p>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Phone</h5>
+													<p><%= applist[i].phone%></p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Address</h5>
+													<p><%= applist[i].address%></p>
+												</td>
+												<td class="text-right">
+													<a href="/khairat" class="btn btn-outline-primary take-btn">Take up</a>
+                                                </td>
+                                                <% } %>
+											</tr>
+											
+											
+											
+										
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card member-panel">
+							<div class="card-header bg-white">
+								<h4 class="card-title mb-0">Anak Yatim</h4>
+							</div>
+                            <div class="card-body">
+                                <ul class="contact-list">
+                                    <% for (var i = 0; i < doclist.length; i++){ %>
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="John Doe"><img src="/assets/images/upload_images/<%= doclist[i].image %>"" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis"><%= doclist[i].full_name%> <%= doclist[i].phone%></span>
+                                                
+                                                <span class="contact-date">anak yatim</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <% } %>
+                                    
+                                  
+                            
+                                  
+                                </ul>
+                            </div>
+                            <div class="card-footer text-center bg-white">
+                                <a href="/anakyatim" class="text-muted">View all Anak Yatim list</a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.slimscroll.js"></script>
+    <script src="/assets/js/Chart.bundle.js"></script>
+    <script src="/assets/js/chart.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+</body>
+
+
+
+</html>
